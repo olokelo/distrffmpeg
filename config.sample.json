@@ -1,0 +1,21 @@
+{
+    "ffmpeg_bin": "ffmpeg",
+    "ffprobe_bin": "ffprobe",
+    "server_work_path": "/tmp/distrffmpeg_server",
+    "loglevel": "INFO",
+    "segment_frames": 600,
+    "keyint_min": 300,
+    "keyint_max": 900,
+    "job_max_retries": 3,
+    "workers": [
+
+        {"host": "192.168.1.100", "user": "linuxnerd", "work_path": "/tmp/distrffmpeg", "ffmpeg_bin": "ffmpeg", "platform": "Linux", "params": {"port": 2222}},
+
+        {"host": "192.168.1.200", "user": "myuser", "work_path": "/Users/MyUser/AppData/Local/Temp/distrffmpeg", "ffmpeg_bin": "ffmpeg", "platform": "Windows", "params": {}},
+
+        {"host": "bigserver.local", "user": "linuxnerd", "work_path": "/tmp/distrffmpeg", "ffmpeg_bin": "ffmpeg", "platform": "Linux", "params": {"timeout": 20}},
+        {"host": "bigserver.local", "user": "linuxnerd", "work_path": "/tmp/distrffmpeg", "ffmpeg_bin": "ffmpeg", "platform": "Linux", "params": {"timeout": 20}},
+        {"host": "bigserver.local", "user": "linuxnerd", "work_path": "/tmp/distrffmpeg", "ffmpeg_bin": "ffmpeg", "platform": "Linux", "params": {"timeout": 20}}
+
+    ]
+}

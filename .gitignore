@@ -1,0 +1,7 @@
+__pycache__/
+sbx/
+*.py[cod]
+
+config.json
+scene_detect.py
+*.kdev4
